@@ -4,7 +4,7 @@ FROM ubuntu:14.04.3
 MAINTAINER malaohu <tua@live.cn>
 RUN apt-get update && \
 	apt-get install libnet1 libpcap0.8  && \
-	apt-get install -y libnet1-dev libpcap0.8-dev
+	apt-get install -y libnet1-dev libpcap0.8-dev && \
     apt-get install -y git squid
 RUN wget --no-check-certificate https://raw.githubusercontent.com/malaohu/squid-with-net-speeder/master/squid.conf -O /etc/squid3/squid.conf
 
