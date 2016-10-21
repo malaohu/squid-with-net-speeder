@@ -15,7 +15,7 @@ RUN apt-get update && \
 
 ADD squid.conf /etc/squid3/squid.conf
 RUN mkdir /var/cache/squid
-RUN chown -x /var/cache/squid
+#RUN chown -x /var/cache/squid
 RUN /usr/sbin/squid3 -N -z -F
 
 
