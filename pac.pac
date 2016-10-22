@@ -1,5 +1,3 @@
-
-
 var proxy = "HTTPS insane-blackwell-1914.arukascloud.io;";
 
 var domains = {
